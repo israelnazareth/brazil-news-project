@@ -4,11 +4,11 @@
   margin: 0;
   padding: 0;
   font-family: 'Merriweather', serif;
+  text-decoration: none;
+  color: #fafafa;
 }
 
 .App {
-  height: 100vh;
   text-align: center;
-  background-color: #111;
-  color: #fafafa;
+  background-color: #222;
 }

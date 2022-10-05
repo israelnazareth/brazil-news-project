@@ -1,11 +1,12 @@
 import Header from './components/Header/Header';
 import './App.css';
+import Headlines from './components/Headlines/Headlines';
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <h1>Hello!</h1>
+      <Headlines />
     </div>
   );
 }

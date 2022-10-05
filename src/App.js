@@ -1,14 +1,22 @@
+import { useState } from 'react';
 import Header from './components/Header/Header';
+import MainPage from './components/MainPage/MainPage';
+import MyContext from './context/MyContext';
+import Footer from './components/Footer/Footer';
 import './App.css';
-import Headlines from './components/Headlines/Headlines';
 
-function App() {
+export default function App() {
+  const [articles, setArticles] = useState([])
+
+  const context = { articles, setArticles }
+
   return (
-    <div className="App">
-      <Header />
-      <Headlines />
-    </div>
+    <MyContext.Provider value={context}>
+      <div className="App">
+        <Header />
+        <MainPage />
+        <Footer />
+      </div>
+    </MyContext.Provider>
   );
 }
-
-export default App;

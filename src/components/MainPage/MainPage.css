@@ -1,3 +1,18 @@
+.noService {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 15px;
+}
+
+.newsType {
+  margin-top: 60px;
+  padding: 15px;
+  padding-bottom: 0;
+  text-align: left;
+}
+
 .main {
   display: flex;
   flex-direction: row;
@@ -5,7 +20,6 @@
   justify-content: center;
   padding: 15px;
   gap: 0 20px;
-  margin-top: 60px;
 }
 
 .card {
@@ -44,7 +58,24 @@
 }
 
 @media (min-width: 900px) {
+  .newsType {
+    max-width: 820px;
+    margin-left:auto;
+    margin-right:auto;
+  }
   .card {
     width: 400px;
+  }
+}
+
+@media (min-width: 1270px) {
+  .newsType {
+    max-width: 1240px;
+  }
+}
+
+@media (min-width: 1690px) {
+  .newsType {
+    max-width: 1655px
   }
 }

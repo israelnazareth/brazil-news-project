@@ -8,6 +8,11 @@
   color: #fafafa;
 }
 
+::selection {
+  background-color: #FFF;
+  color: #222;
+}
+
 .App {
   text-align: center;
   background-color: #222;

@@ -6,6 +6,7 @@
   font-family: 'Merriweather', serif;
   text-decoration: none;
   color: #fafafa;
+  scroll-behavior: smooth;
 }
 
 ::selection {

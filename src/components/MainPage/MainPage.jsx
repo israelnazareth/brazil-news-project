@@ -7,10 +7,10 @@ export default function Headlines() {
 
   return (
     <div>
-      {articles.length ? <div className='main' id="home">
-        <h1 className='newsType'>{articles.length ? articles[0].type : 'Geral'}</h1>
+      <h1 className='newsType' id="home">{articles.length ? articles[0].type : 'Geral'}</h1>
+      <div className='main'>
         {articles.map(({ url, urlToImage, title, source, description}, i) => {
-        return ( urlToImage ?
+        return ( urlToImage &&
           <a href={url} key={i} target='blank'>
             <div className='card' style={{backgroundImage: `url('${urlToImage}'`}}>
               <p className='cardSource'>{(source.name).toUpperCase()}</p>
@@ -19,10 +19,10 @@ export default function Headlines() {
                 <p className='cardDescription'>{description}</p>
               </div>
             </div>
-          </a> : null
+          </a>
         )
         })}
-      </div> : <h2 className='noService'>Desculpe, estamos fora do ar no momento.</h2>}
+      </div>
     </div>
   )
 }

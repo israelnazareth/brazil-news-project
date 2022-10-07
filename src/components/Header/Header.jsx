@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useContext, useEffect } from "react";
 import { GiHamburgerMenu } from 'react-icons/gi'
 import MyContext from "../../context/MyContext";
@@ -13,7 +14,7 @@ export default function Header() {
     setArticles(articlesWithType)
   }
 
-  useEffect(() => { getNewsByCategory() })
+  useEffect(() => { getNewsByCategory() }, [])
 
   return (
     <div className="header">

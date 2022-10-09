@@ -5,6 +5,6 @@ export const fetchByCategory = async (category) => {
     const objectData = await URL.json()
     return objectData.articles
   } catch (error) {
-    console.log(error.message)
+    console.error('Something went wrong! => ', error.message)
   }
 }

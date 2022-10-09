@@ -3,6 +3,11 @@ import { BsWhatsapp } from 'react-icons/bs'
 import './Footer.css'
 
 const Footer = () => {
+  const topFunction = () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
   return (
     <footer className="footer">
       <div className="footer-container">
@@ -21,9 +26,9 @@ const Footer = () => {
           <div>&copy; 2022 | Desenvolvido por Israel Nazareth</div>
           <div>Todos os direitos reservados</div>
         </div>
-        <a href="#home" className="button-to-top">
-          <GrLinkTop title='Voltar ao topo' />
-        </a>
+        <span className="button-to-top" onClick={() => topFunction()}>
+          <GrLinkTop title='Voltar ao topo'/>
+        </span>
       </div>
     </footer>
   )

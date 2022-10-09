@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import MyContext from '../../context/MyContext'
+import Cards from '../Cards/Cards'
 import './MainPage.css'
 
 export default function Headlines() {
@@ -7,22 +8,12 @@ export default function Headlines() {
 
   return (
     <div>
-      <h1 className='newsType' id="home">{articles.length ? articles[0].type : 'Geral'}</h1>
-      <div className='main'>
-        {articles.map(({ url, urlToImage, title, source, description}, i) => {
-        return ( urlToImage &&
-          <a href={url} key={i} target='blank'>
-            <div className='card' style={{backgroundImage: `url('${urlToImage}'`}}>
-              <p className='cardSource'>{(source.name).toUpperCase()}</p>
-              <div className="cardTexts">
-                <h1 className='cardTitle'>{title}</h1>
-                <p className='cardDescription'>{description}</p>
-              </div>
-            </div>
-          </a>
-        )
-        })}
-      </div>
+      { articles.length ? <div>
+        <h1 className='newsType' id="home">{articles[0].type}</h1>
+        <div className='main'>
+          <Cards />
+        </div>
+      </div> : <h1 className="noService">Desculpe o transtorno, estamos fora do ar no momento.</h1>}
     </div>
   )
 }

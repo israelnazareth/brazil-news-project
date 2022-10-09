@@ -14,19 +14,28 @@ export default function Header() {
     setArticles(articlesWithType)
   }
 
+  const showCategories = () => {
+    const list = document.querySelector('.listNavbar');
+      window.innerWidth < 900 ? list.classList.toggle('opened') : list.classList.remove('opened')
+  }
+
   useEffect(() => { getNewsByCategory() }, [])
 
   return (
     <div className="header">
-      <h2 className="logo" onClick={() => getNewsByCategory('general', 'Geral')}>Brazil News</h2>
-      <GiHamburgerMenu className="menuIcon"/>
-      <p className="itemNavbar" onClick={() => getNewsByCategory('general', 'Geral')}>Geral</p>
-      <p className="itemNavbar" onClick={() => getNewsByCategory('business', 'Negócios')}>Negócios</p>
-      <p className="itemNavbar" onClick={() => getNewsByCategory('entertainment', 'Entretenimento')}>Entretenimento</p>
-      <p className="itemNavbar" onClick={() => getNewsByCategory('health', 'Saúde')}>Saúde</p>
-      <p className="itemNavbar" onClick={() => getNewsByCategory('science', 'Ciência')}>Ciência</p>
-      <p className="itemNavbar" onClick={() => getNewsByCategory('sports', 'Esporte')}>Esporte</p>
-      <p className="itemNavbar" onClick={() => getNewsByCategory('technology', 'Tecnologia')}>Tecnologia</p>
+      <div className="headerContent">
+        <h2 className="logo" onClick={() => getNewsByCategory()}>Brazil News</h2>
+        <ul className="listNavbar">
+          <li className="itemNavbar" onClick={() => getNewsByCategory('general', 'Geral') && showCategories()}>Geral</li>
+          <li className="itemNavbar" onClick={() => getNewsByCategory('business', 'Negócios') && showCategories()}>Negócios</li>
+          <li className="itemNavbar" onClick={() => getNewsByCategory('entertainment', 'Entretenimento') && showCategories()}>Entretenimento</li>
+          <li className="itemNavbar" onClick={() => getNewsByCategory('health', 'Saúde') && showCategories()}>Saúde</li>
+          <li className="itemNavbar" onClick={() => getNewsByCategory('science', 'Ciência') && showCategories()}>Ciência</li>
+          <li className="itemNavbar" onClick={() => getNewsByCategory('sports', 'Esporte') && showCategories()}>Esporte</li>
+          <li className="itemNavbar" onClick={() => getNewsByCategory('technology', 'Tecnologia') && showCategories()}>Tecnologia</li>
+        </ul>
+        <GiHamburgerMenu className="menuIcon" onClick={() => showCategories()}/>
+      </div>
     </div>
   )
 }

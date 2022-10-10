@@ -5,13 +5,25 @@
   padding: 0;
   font-family: 'Merriweather', serif;
   text-decoration: none;
-  color: #fafafa;
+  color: #FAFAFA;
   scroll-behavior: smooth;
 }
 
 ::selection {
   background-color: #FFF;
   color: #222;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FAFAFA;
+}
+
+::-webkit-scrollbar-track {
+  background: #111;
 }
 
 .App {

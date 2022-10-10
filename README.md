@@ -1,4 +1,6 @@
-# Boas vindas ao projeto Google News!
+# Boas vindas ao projeto Brazil News!
+
+https://user-images.githubusercontent.com/85763987/194800854-9977656c-e661-449f-ab73-d478103e308b.mp4
 
 ## Habilidades
 Neste projeto fui capaz de:

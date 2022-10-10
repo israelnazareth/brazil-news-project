@@ -31,8 +31,12 @@ Neste projeto criei uma versão simplificada de um **site de notícias** que con
 2. Instale as dependências e inicialize o projeto
   * Instale as dependências:
     * `npm install`
+  * Registre-se no [site da API](https://newsapi.org/) e obtenha a sua `key`:
+    * Ex: `78gdsf9gsd9f5gsdf4g2daf1gsdafg3y`
+  * Crie um arquivo `.env.local` na raíz do projeto, abra-o e adicione a sua key:
+    * `REACT_APP_API_KEY="sua_key"`
   * Inicialize o projeto:
-    * `npm start` (uma nova página deve abrir no seu navegador com um texto simples)
+    * `npm start` (uma nova página deve abrir no seu navegador)
 
 3. Crie uma branch a partir da branch `master`
 

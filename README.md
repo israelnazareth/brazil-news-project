@@ -26,9 +26,9 @@ Neste projeto criei uma versão simplificada de um **site de notícias** que con
 ## Instruções para baixar o projeto:
 
 1. Clone o repositório
-  * `git clone git@github.com:israelnazareth/google-news-project.git`.
+  * `git clone git@github.com:israelnazareth/brazil-news-project.git`.
   * Entre na pasta do repositório que você acabou de clonar:
-    * `cd google-news-project`
+    * `cd brazil-news-project`
 
 2. Instale as dependências e inicialize o projeto
   * Instale as dependências:

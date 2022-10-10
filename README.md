@@ -13,7 +13,7 @@ Neste projeto fui capaz de:
 ---
 ## O que foi desenvolvido
 
-Neste projeto criei uma versão simplificada de um **site de notícias** que consome dados da _API do Google News_, resultando em uma aplicação onde os usuários poderão:
+Neste projeto criei uma versão simplificada de um **site de notícias** que consome dados de uma API de notícias, resultando em uma aplicação onde os usuários poderão:
   - Interagir com as notícias renderizadas em Cards, redirecionando-as ao site da fonte que publicou a notícia;
 
   - Escolher a categoria de notícias a serem renderizadas dinamicamente e atualizadas a cada 1 hora de acordo com a API.

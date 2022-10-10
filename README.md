@@ -5,7 +5,7 @@ https://user-images.githubusercontent.com/85763987/194800854-9977656c-e661-449f-
 ## Habilidades
 Neste projeto fui capaz de:
 
-  * Fazer requisições e consumir dados vindos da `API` do Google News;
+  * Fazer requisições e consumir dados vindos de uma `API` de notícias;
 
   * Utilizar a função `setState` de forma a garantir que um determinado código só é executado após o estado ser atualizado;
   
@@ -26,9 +26,9 @@ Neste projeto criei uma versão simplificada de um **site de notícias** que con
 ## Instruções para baixar o projeto:
 
 1. Clone o repositório
-  * `git clone git@github.com:israelnazareth/brazil-news-project.git`.
+  * `git clone git@github.com:israelnazareth/google-news-project.git`.
   * Entre na pasta do repositório que você acabou de clonar:
-    * `cd brazil-news-project`
+    * `cd google-news-project`
 
 2. Instale as dependências e inicialize o projeto
   * Instale as dependências:

@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/google-news-project/static/css/main.50591655.css",
+    "main.js": "/google-news-project/static/js/main.d3abae3d.js",
+    "static/js/787.1c61b114.chunk.js": "/google-news-project/static/js/787.1c61b114.chunk.js",
+    "index.html": "/google-news-project/index.html",
+    "main.50591655.css.map": "/google-news-project/static/css/main.50591655.css.map",
+    "main.d3abae3d.js.map": "/google-news-project/static/js/main.d3abae3d.js.map",
+    "787.1c61b114.chunk.js.map": "/google-news-project/static/js/787.1c61b114.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.50591655.css",
+    "static/js/main.d3abae3d.js"
+  ]
+}

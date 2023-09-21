@@ -8,6 +8,8 @@
   background-position: center;
   height: 580px;
   border-radius: 6px;
+  padding: 0;
+  border: none;
 }
 
 .cardSource {

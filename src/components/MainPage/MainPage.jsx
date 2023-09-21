@@ -8,8 +8,8 @@ export default function Headlines() {
 
   return (
     <div>
-      { articles.length ? <div>
-        <h1 className='newsType' id="home">{articles[0].type}</h1>
+      { articles?.articles?.length ? <div>
+        <h1 className='newsType' id="home">{articles.type}</h1>
         <div className='main'>
           <Cards />
         </div>

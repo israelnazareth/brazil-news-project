@@ -1,9 +1,9 @@
 export const fetchByCategory = async (category) => {
   try {
     const key = process.env.REACT_APP_API_KEY
-    const URL = await fetch(`https://newsapi.org/v2/top-headlines?apiKey=${key}&country=br&category=${category}`)
-    const objectData = await URL.json()
-    return objectData.articles
+    const response = await fetch(`https://gnews.io/api/v4/top-headlines?category=${category}&country=br&max=12&apikey=${key}`)
+    const data = await response.json()
+    return data.articles
   } catch (error) {
     console.error('Something went wrong! => ', error.message)
   }
